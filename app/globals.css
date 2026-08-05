@@ -40,7 +40,7 @@ body {
   }
 
   [data-reveal],
-  [data-signature-line] path {
+  [data-signature-line] svg {
     transition: none !important;
   }
 }

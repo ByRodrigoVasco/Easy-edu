@@ -31,7 +31,7 @@ export default function Home() {
             {hero.support}
           </p>
         </div>
-        <SignatureLine tone="white" className="relative z-10 mt-12 pb-16 md:pb-24" />
+        <SignatureLine tone="white" className="relative z-10 mt-8 pb-10 md:pb-14" />
       </Section>
 
       <Section background="black" fullBleed>
