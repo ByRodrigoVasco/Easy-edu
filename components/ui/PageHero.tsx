@@ -12,7 +12,7 @@ export default function PageHero({ eyebrow, title, support }: PageHeroProps) {
           {eyebrow}
         </p>
       )}
-      <h1 className="max-w-5xl font-heading text-3xl font-black uppercase leading-[1.15] tracking-[-0.01em] text-black md:text-5xl">
+      <h1 className="max-w-5xl font-heading text-3xl font-bold uppercase leading-[1.15] tracking-[-0.01em] text-black md:text-5xl">
         {title}
       </h1>
       {support && (

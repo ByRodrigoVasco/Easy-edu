@@ -1,20 +1,13 @@
 import type { Metadata } from "next";
-import { Archivo, Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
-const archivo = Archivo({
-  variable: "--font-archivo",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["800", "900"],
-  display: "swap",
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["400", "600"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -31,14 +24,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pt-BR"
-      className={`${archivo.variable} ${inter.variable} h-full antialiased`}
+      className={`${dmSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <noscript>
           <style>{`[data-reveal]{opacity:1!important;transform:none!important;}`}</style>
         </noscript>
         <Header />
-        <main className="flex-1 pt-[var(--header-height)]">{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>

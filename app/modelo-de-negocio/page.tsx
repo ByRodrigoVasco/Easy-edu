@@ -24,10 +24,10 @@ export default function ModeloDeNegocioPage() {
           {phases.map((phase, i) => (
             <Reveal key={phase.title} delayMs={i * 80}>
               <Card tone="white" className="flex h-full min-h-56 flex-col">
-                <p className="font-heading text-3xl font-black tracking-[-0.02em] text-blue">
+                <p className="font-heading text-3xl font-bold tracking-[-0.02em] text-blue">
                   {String(i + 1).padStart(2, "0")}
                 </p>
-                <p className="mt-4 font-heading text-2xl font-black uppercase tracking-tight">
+                <p className="mt-4 font-heading text-2xl font-bold uppercase tracking-tight">
                   {phase.title}
                 </p>
                 <p className="mt-1 text-xs font-semibold uppercase tracking-[0.08em] text-blue-deep">
@@ -44,7 +44,7 @@ export default function ModeloDeNegocioPage() {
 
       <Section background="sand">
         <Reveal>
-          <h2 className="font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
+          <h2 className="font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
             {subscription.heading}
           </h2>
           <MarkerList className="mt-8 max-w-2xl" items={subscription.items} />
@@ -57,7 +57,7 @@ export default function ModeloDeNegocioPage() {
           className="absolute inset-x-0 top-0 opacity-40"
         />
         <Reveal>
-          <h2 className="font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] text-white md:text-5xl">
+          <h2 className="font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] text-white md:text-5xl">
             {potentialMarket.heading}
           </h2>
         </Reveal>

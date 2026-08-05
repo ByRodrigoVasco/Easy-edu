@@ -22,7 +22,7 @@ export default function SolucaoPage() {
 
       <Section background="white">
         <Reveal>
-          <h2 className="font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
+          <h2 className="font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
             {pillars.heading}
           </h2>
         </Reveal>
@@ -32,11 +32,11 @@ export default function SolucaoPage() {
               <Card tone="white" className="flex h-full min-h-56 flex-col">
                 <div className="flex items-center justify-between">
                   <PillarIcon index={i} className="text-blue" />
-                  <p className="font-heading text-3xl font-black tracking-[-0.02em] text-blue">
+                  <p className="font-heading text-3xl font-bold tracking-[-0.02em] text-blue">
                     {String(i + 1).padStart(2, "0")}
                   </p>
                 </div>
-                <p className="mt-4 font-heading text-xl font-black uppercase tracking-tight">
+                <p className="mt-4 font-heading text-xl font-bold uppercase tracking-tight">
                   {pillar.title}
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-black/80">
@@ -50,7 +50,7 @@ export default function SolucaoPage() {
 
       <Section background="sand">
         <Reveal>
-          <h2 className="font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
+          <h2 className="font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
             {journey.heading}
           </h2>
         </Reveal>
@@ -65,7 +65,7 @@ export default function SolucaoPage() {
           className="absolute inset-x-0 top-0 opacity-40"
         />
         <Reveal>
-          <h2 className="font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] text-white md:text-5xl">
+          <h2 className="font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] text-white md:text-5xl">
             {differentiators.heading}
           </h2>
           <MarkerList

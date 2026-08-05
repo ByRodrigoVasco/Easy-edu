@@ -15,7 +15,7 @@ export default function PersonCard({
 }: PersonCardProps) {
   return (
     <Card tone="white" className="h-full">
-      <p className="font-heading text-xl font-black uppercase tracking-tight">
+      <p className="font-heading text-xl font-bold uppercase tracking-tight">
         {name}
       </p>
       <p className="mt-1 text-xs font-semibold uppercase tracking-[0.08em] text-blue-deep">

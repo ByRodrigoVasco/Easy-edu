@@ -20,7 +20,7 @@ export default function DesafioPage() {
 
       <Section background="white">
         <Reveal>
-          <h2 className="font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
+          <h2 className="font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
             {pains.heading}
           </h2>
         </Reveal>
@@ -28,10 +28,10 @@ export default function DesafioPage() {
           {pains.items.map((pain, i) => (
             <Reveal key={pain.number} delayMs={i * 80}>
               <Card tone="white" className="h-full">
-                <p className="font-heading text-4xl font-black tracking-[-0.02em] text-blue">
+                <p className="font-heading text-4xl font-bold tracking-[-0.02em] text-blue">
                   {pain.number}
                 </p>
-                <p className="mt-4 font-heading text-lg font-black uppercase tracking-tight">
+                <p className="mt-4 font-heading text-lg font-bold uppercase tracking-tight">
                   {pain.title}
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-black/80">
@@ -52,7 +52,7 @@ export default function DesafioPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.08em] text-blue-soft">
             {costGap.heading}
           </p>
-          <p className="mt-6 font-heading text-7xl font-black tracking-[-0.03em] text-white md:text-8xl">
+          <p className="mt-6 font-heading text-7xl font-bold tracking-[-0.03em] text-white md:text-8xl">
             {costGap.value}
           </p>
           <p className="mt-2 text-sm font-semibold uppercase tracking-wide text-white/60">
@@ -66,7 +66,7 @@ export default function DesafioPage() {
 
       <Section background="sand">
         <Reveal>
-          <h2 className="font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
+          <h2 className="font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
             {impacted.heading}
           </h2>
           <MarkerList className="mt-8 max-w-2xl" items={impacted.items} />
@@ -75,7 +75,7 @@ export default function DesafioPage() {
 
       <Section background="blue">
         <Reveal>
-          <p className="max-w-4xl font-heading text-3xl font-black uppercase leading-[1.05] tracking-[-0.02em] text-white md:text-5xl">
+          <p className="max-w-4xl font-heading text-3xl font-bold uppercase leading-[1.05] tracking-[-0.02em] text-white md:text-5xl">
             {synthesis.question}
           </p>
         </Reveal>
