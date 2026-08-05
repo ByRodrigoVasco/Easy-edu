@@ -24,11 +24,12 @@ export const members = [
       "Experiência como freelancer em projetos para grandes empresas. Graduado em Engenharia de Software pela Jala University. Cursa o 2º período de Análise e Desenvolvimento de Sistemas.",
   },
   {
-    name: "Mateus Fialho",
+    name: "Matheus Fialho",
     role: "Head of Product e desenvolvedor",
     responsibility:
       "Responsável pela estratégia e evolução do produto, traduzindo necessidades dos usuários em funcionalidades. Participa também do desenvolvimento das soluções que integram as experiências de estudantes, instituições parceiras e administradores.",
-    background: "Cursa o 4º período de Ciência da Computação.",
+    background:
+      "Foi monitor de Fundamentos de Desenvolvimento de Software na CESAR School. Teve formação internacional na Kuopion Lyseon Lukio, na Finlândia, durante intercâmbio pelo Rotary International. Cursa o 4º período de Ciência da Computação.",
   },
   {
     name: "Tales Cavalcanti",
@@ -42,7 +43,8 @@ export const members = [
     name: "Yasmin Correia",
     role: "UI/UX Designer",
     responsibility:
-      "Responsável pela identidade visual, experiência do usuário, prototipação e construção de jornadas simples, intuitivas e acessíveis para estudantes, instituições parceiras e administradores.",
-    background: "Experiência em UI/UX pela Facepe. Cursa o 4º período de Design.",
+      "Responsável pelo desenvolvimento da identidade visual da EasyEdu, prototipação e construção de jornadas simples, intuitivas e acessíveis para estudantes, instituições parceiras e administradores.",
+    background:
+      "Foi bolsista da FACEPE, onde adquiriu experiência em pesquisa e desenvolvimento de projetos. Possui interesse nas áreas de UX/UI e Design Gráfico e, atualmente, cursa o 4º período de Design.",
   },
 ];
