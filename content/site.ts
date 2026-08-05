@@ -8,7 +8,6 @@ export const nav: NavItem[] = [
   { label: "Desafio", href: "/desafio" },
   { label: "Solução", href: "/solucao" },
   { label: "Modelo de Negócio", href: "/modelo-de-negocio" },
-  { label: "Impacto Social", href: "/impacto-social" },
   { label: "Equipe", href: "/equipe" },
 ];
 
