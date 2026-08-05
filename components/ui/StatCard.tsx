@@ -5,7 +5,7 @@ type StatCardProps = {
 
 export default function StatCard({ value, description }: StatCardProps) {
   return (
-    <div className="rounded-xl bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-8">
+    <div className="flex h-full min-h-56 flex-col rounded-xl bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-8">
       <p className="break-words font-heading text-3xl font-bold leading-tight tracking-[-0.01em] text-black md:text-4xl">
         {value}
       </p>

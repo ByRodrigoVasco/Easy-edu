@@ -6,12 +6,10 @@ export const hero = {
 
 export const phases = [
   {
-    label: "Fase 1",
     title: "B2B2C",
-    body: "A escola contrata a EasyEdu e disponibiliza a rede de cursos preparatórios aos seus alunos como benefício.",
+    body: "A escola contrata a Easy Edu e disponibiliza a rede de cursos preparatórios aos seus alunos como benefício.",
   },
   {
-    label: "Fase 2",
     title: "B2C",
     body: "Ao concluir o Ensino Médio, o egresso mantém o acesso contratando diretamente um plano proporcional ao seu objetivo.",
   },
@@ -20,8 +18,8 @@ export const phases = [
 export const subscription = {
   heading: "Mecânica da assinatura",
   items: [
-    "Assinatura flexível, inspirada em plataformas como Gympass e ChatGPT Plus",
-    "Planos adaptáveis ao perfil e à necessidade do estudante — básico, intermediário e premium",
+    "Assinatura flexível, inspirada em plataformas como Gympass",
+    "Planos adaptáveis ao perfil e à necessidade do estudante",
     "Pagamento mensal, trimestral ou anual, com descontos progressivos",
     "Repartição de receita com os cursinhos parceiros, conforme o uso",
     "Modelo escalável, inclusivo e com previsibilidade de receita recorrente",
@@ -29,27 +27,30 @@ export const subscription = {
 };
 
 // Rótulo "público potencial" — nunca "mercado total endereçável" (briefing v2, seção 4.4).
+// Números atualizados a partir de EasyEdu-Dados-Mercado.pdf (ago/2026), que corrige a
+// apresentação institucional original — ver seção 4 do documento para o de-para completo.
 export const potentialMarket = {
   heading: "Público potencial",
-  sourceNote: "[PREENCHER: fonte e ano de cada número, conforme a apresentação institucional]",
+  sourceNote:
+    "Fonte: INEP/MEC - Censo Escolar da Educação Básica 2025 (fev/2026) e Painel ENEM 2025 / balanço parcial ENEM 2026 (jul/2026).",
   stats: [
     {
-      value: "8 milhões",
-      description: "Estudantes atualmente cursando o Ensino Médio",
+      value: "7,37 mi",
+      description: "Matrículas no Ensino Médio no Brasil",
     },
     {
-      value: "1,8 milhão",
+      value: "1,03 mi",
       description:
-        "Inscritos no ENEM que já concluíram o Ensino Médio — 65% dos inscritos em 2024",
+        "Treineiros de 1º e 2º ano já prestando o ENEM",
     },
     {
-      value: "200 mil",
+      value: "1,81 mi",
+      description: "Concluintes do Ensino Médio prestando o ENEM para ingresso",
+    },
+    {
+      value: "2,84 mi",
       description:
-        "Estudantes por ano que tentam ingresso em faculdades privadas após o Ensino Médio",
-    },
-    {
-      value: "~10 milhões",
-      description: "Público potencial estimado, em número de pessoas",
+        "Público potencial defensável: concluintes + treineiros, sem dupla contagem",
     },
   ],
 };
