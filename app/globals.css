@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color tokens — fixed palette, see briefing v2 section 2.1 */
+  --color-black: #0d0d0d;
+  --color-lime: #c0f20c;
+  --color-lime-deep: #4a5c0e;
+  --color-green: #9ebf24;
+  --color-green-soft: #c6d982;
+  --color-sand: #f2efeb;
+  --color-white: #ffffff;
+  --color-rule: #d9d9d9;
+
+  /* Typography */
+  --font-heading: var(--font-archivo), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+
+  /* Layout */
+  --header-height: 4.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-sand);
+  color: var(--color-black);
+  font-family: var(--font-body);
+}
+
+/* Compensates the fixed header so in-page anchors don't hide under it */
+[id] {
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
