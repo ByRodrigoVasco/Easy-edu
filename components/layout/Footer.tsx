@@ -13,7 +13,7 @@ export default function Footer() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-xs font-semibold uppercase tracking-wide text-white hover:text-lime"
+              className="text-xs font-semibold uppercase tracking-wide text-white transition-colors hover:text-white/70"
             >
               {item.label}
             </Link>

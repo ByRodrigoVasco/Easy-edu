@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  /* Color tokens — fixed palette, see briefing v2 section 2.1 */
+  /* Color tokens — fixed palette, blue family (replaces the green/lime palette) */
   --color-black: #0d0d0d;
-  --color-lime: #c0f20c;
-  --color-lime-deep: #4a5c0e;
-  --color-green: #9ebf24;
-  --color-green-soft: #c6d982;
+  --color-blue: #072bf2;
+  --color-blue-deep: #091973;
+  --color-blue-support: #0f2abf;
+  --color-blue-soft: #7b8adc;
   --color-sand: #f2efeb;
   --color-white: #ffffff;
   --color-rule: #d9d9d9;
@@ -32,4 +32,15 @@ body {
 /* Compensates the fixed header so in-page anchors don't hide under it */
 [id] {
   scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-reveal],
+  [data-signature-line] path {
+    transition: none !important;
+  }
 }

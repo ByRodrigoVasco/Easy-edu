@@ -4,8 +4,8 @@ import Link from "next/link";
 type Variant = "primary" | "secondary" | "tertiary";
 
 const variantClasses: Record<Variant, string> = {
-  primary: "bg-black text-lime",
-  secondary: "bg-lime text-black",
+  primary: "bg-black text-white",
+  secondary: "bg-blue text-white",
   tertiary: "border border-black bg-transparent text-black",
 };
 
