@@ -20,11 +20,11 @@ export default function Home() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-blue/80" />
-        <div className="relative z-10 mx-auto max-w-6xl px-6 pt-24 md:pt-32">
+        <div className="relative z-10 mx-auto max-w-6xl px-6 pt-10 md:pt-16">
           <p className="text-xs font-semibold uppercase tracking-[0.08em] text-white/70">
             {hero.eyebrow}
           </p>
-          <h1 className="mt-4 max-w-3xl font-heading text-3xl font-black uppercase leading-[1.15] tracking-[-0.01em] text-white md:text-5xl">
+          <h1 className="mt-4 max-w-3xl font-heading text-3xl font-bold uppercase leading-[1.15] tracking-[-0.01em] text-white md:text-5xl">
             {hero.title}
           </h1>
           <p className="mt-8 max-w-xl border-t border-white/30 pt-6 text-lg leading-relaxed text-white/90">
@@ -42,7 +42,7 @@ export default function Home() {
               <p className="text-xs font-semibold uppercase tracking-[0.08em] text-blue-soft">
                 Origem
               </p>
-              <h2 className="mt-4 font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] text-white md:text-5xl">
+              <h2 className="mt-4 font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] text-white md:text-5xl">
                 {origin.heading}
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80">
@@ -60,7 +60,7 @@ export default function Home() {
               <p className="text-xs font-semibold uppercase tracking-[0.08em] text-blue-deep">
                 Propósito
               </p>
-              <h2 className="mt-4 font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
+              <h2 className="mt-4 font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
                 {purpose.heading}
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-relaxed">
@@ -82,7 +82,7 @@ export default function Home() {
           <p className="text-xs font-semibold uppercase tracking-[0.08em] text-blue-deep">
             Como funciona
           </p>
-          <h2 className="mt-4 font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
+          <h2 className="mt-4 font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
             {experience.heading}
           </h2>
         </Reveal>
@@ -127,7 +127,7 @@ export default function Home() {
           className="absolute inset-x-0 top-0 opacity-40"
         />
         <Reveal>
-          <h2 className="font-heading text-4xl font-black uppercase leading-[0.95] tracking-[-0.03em] md:text-6xl">
+          <h2 className="font-heading text-4xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-6xl">
             {closing.heading}
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">

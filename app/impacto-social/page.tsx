@@ -17,7 +17,7 @@ export default function ImpactoSocialPage() {
 
       <Section background="white">
         <Reveal>
-          <h2 className="font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
+          <h2 className="font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
             {barrier.heading}
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-black/80">
@@ -28,7 +28,7 @@ export default function ImpactoSocialPage() {
 
       <Section background="blue">
         <Reveal>
-          <h2 className="font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] text-white md:text-5xl">
+          <h2 className="font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] text-white md:text-5xl">
             {reach.heading}
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/90">

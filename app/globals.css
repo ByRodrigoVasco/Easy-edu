@@ -11,12 +11,14 @@
   --color-white: #ffffff;
   --color-rule: #d9d9d9;
 
-  /* Typography */
-  --font-heading: var(--font-archivo), sans-serif;
-  --font-body: var(--font-inter), sans-serif;
+  /* Typography — DM Sans em todo o site, peso máximo 700 */
+  --font-heading: var(--font-dm-sans), sans-serif;
+  --font-body: var(--font-dm-sans), sans-serif;
 
   /* Layout */
   --header-height: 4.5rem;
+  /* Respiro entre o topo da tela e a barra flutuante do header. */
+  --header-gap: 1rem;
 }
 
 html {
@@ -29,9 +31,16 @@ body {
   font-family: var(--font-body);
 }
 
+/* O header flutua sobre o fundo da seção que estiver embaixo dele — o conteúdo
+   sobe até o topo da viewport. Só a primeira seção reserva a altura dele, para
+   que o título não nasça escondido atrás da barra. */
+main > :first-child {
+  padding-top: calc(var(--header-height) + var(--header-gap) * 2);
+}
+
 /* Compensates the fixed header so in-page anchors don't hide under it */
 [id] {
-  scroll-margin-top: calc(var(--header-height) + 1rem);
+  scroll-margin-top: calc(var(--header-height) + var(--header-gap) + 1rem);
 }
 
 @media (prefers-reduced-motion: reduce) {
