@@ -30,9 +30,6 @@ export default function ModeloDeNegocioPage() {
                 <p className="mt-4 font-heading text-2xl font-black uppercase tracking-tight">
                   {phase.title}
                 </p>
-                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.08em] text-blue-deep">
-                  {phase.label}
-                </p>
                 <p className="mt-3 text-base leading-relaxed text-black/80">
                   {phase.body}
                 </p>
