@@ -1,7 +1,7 @@
 export const hero = {
   eyebrow: "Modelo de Negócio e Mercado",
   title:
-    "Um modelo de receita em duas fases: primeiro a escola, depois o estudante.",
+    "Um modelo de receita em duas fases. Primeiro a escola, depois o estudante.",
 };
 
 export const phases = [
@@ -21,17 +21,17 @@ export const subscription = {
   heading: "Mecânica da assinatura",
   items: [
     "Assinatura flexível, inspirada em plataformas como Gympass e ChatGPT Plus",
-    "Planos adaptáveis ao perfil e à necessidade do estudante — básico, intermediário e premium",
+    "Planos básico, intermediário e premium, adaptáveis ao perfil e à necessidade do estudante",
     "Pagamento mensal, trimestral ou anual, com descontos progressivos",
     "Repartição de receita com os cursinhos parceiros, conforme o uso",
     "Modelo escalável, inclusivo e com previsibilidade de receita recorrente",
   ],
 };
 
-// Rótulo "público potencial" — nunca "mercado total endereçável" (briefing v2, seção 4.4).
+// Rótulo "público potencial", nunca "mercado total endereçável" (briefing v2, seção 4.4).
 export const potentialMarket = {
   heading: "Público potencial",
-  sourceNote: "[PREENCHER: fonte e ano de cada número, conforme a apresentação institucional]",
+  sourceNote: "[PREENCHER] Fonte e ano de cada número, conforme a apresentação institucional",
   stats: [
     {
       value: "8 milhões",
@@ -40,7 +40,7 @@ export const potentialMarket = {
     {
       value: "1,8 milhão",
       description:
-        "Inscritos no ENEM que já concluíram o Ensino Médio — 65% dos inscritos em 2024",
+        "Inscritos no ENEM que já concluíram o Ensino Médio, 65% dos inscritos em 2024",
     },
     {
       value: "200 mil",

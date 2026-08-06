@@ -13,8 +13,8 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "EasyEdu — Educação que cabe na sua realidade",
-    template: "%s — EasyEdu",
+    default: "EasyEdu | Educação que cabe na sua realidade",
+    template: "%s | EasyEdu",
   },
   description:
     "Conectando estudantes aos melhores cursos preparatórios de forma simples e acessível.",

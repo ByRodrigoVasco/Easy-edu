@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import Section from "@/components/ui/Section";
 import PageHero from "@/components/ui/PageHero";
 import Card from "@/components/ui/Card";
-import MarkerList from "@/components/ui/MarkerList";
-import SignatureLine from "@/components/ui/SignatureLine";
+import PersonaStack from "@/components/ui/PersonaStack";
 import Reveal from "@/components/ui/Reveal";
-import { hero, pains, costGap, impacted, synthesis } from "@/content/desafio";
+import { hero, pains, impacted, synthesis } from "@/content/desafio";
 
 export const metadata: Metadata = {
   title: "Desafio",
@@ -43,34 +42,18 @@ export default function DesafioPage() {
         </div>
       </Section>
 
-      <Section background="black" className="relative overflow-hidden">
-        <SignatureLine
-          tone="blue"
-          className="absolute inset-x-0 top-0 opacity-40"
-        />
-        <Reveal>
-          <p className="text-xs font-semibold uppercase tracking-[0.08em] text-blue-soft">
-            {costGap.heading}
-          </p>
-          <p className="mt-6 font-heading text-7xl font-bold tracking-[-0.03em] text-white md:text-8xl">
-            {costGap.value}
-          </p>
-          <p className="mt-2 text-sm font-semibold uppercase tracking-wide text-white/60">
-            {costGap.unit}
-          </p>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
-            {costGap.body}
-          </p>
-        </Reveal>
-      </Section>
-
-      <Section background="sand">
-        <Reveal>
-          <h2 className="font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
-            {impacted.heading}
-          </h2>
-          <MarkerList className="mt-8 max-w-2xl" items={impacted.items} />
-        </Reveal>
+      <Section background="sand" fullBleed>
+        <div className="mx-auto max-w-6xl px-6 pt-16 md:pt-24">
+          <Reveal>
+            <h2 className="font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
+              {impacted.heading}
+            </h2>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-black/80">
+              {impacted.support}
+            </p>
+          </Reveal>
+        </div>
+        <PersonaStack personas={impacted.personas} />
       </Section>
 
       <Section background="blue">

@@ -10,7 +10,7 @@ export const hero = {
 // junto com a fase B2G2C (briefing v2, pendência 3, seção 5).
 export const barrier = {
   heading: "A barreira que se remove",
-  body: "O impacto vai além do acesso: fortalece trajetórias, desenvolve o potencial humano e contribui para uma sociedade mais justa, preparada e competitiva.",
+  body: "O impacto vai além do acesso. Fortalece trajetórias, desenvolve o potencial humano e contribui para uma sociedade mais justa, preparada e competitiva.",
 };
 
 export const reach = {
