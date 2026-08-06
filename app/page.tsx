@@ -11,7 +11,11 @@ const cardTones = ["blue", "white", "white", "black", "white"] as const;
 export default function Home() {
   return (
     <>
-      <Section background="blue" fullBleed className="relative overflow-hidden">
+      <Section
+        background="blue"
+        fullBleed
+        className="relative flex min-h-screen flex-col justify-center overflow-hidden"
+      >
         <Image
           src="/photos/hero-background.webp"
           alt=""
