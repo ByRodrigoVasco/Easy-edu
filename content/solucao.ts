@@ -15,7 +15,7 @@ export const pillars = {
     },
     {
       title: "Centralização",
-      body: "Cursos, disciplinas, reservas e informações reunidos em um só ambiente.",
+      body: "Cursos, disciplinas e informações reunidos em um só ambiente.",
     },
     {
       title: "Personalização",
