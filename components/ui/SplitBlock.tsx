@@ -23,7 +23,7 @@ export default function SplitBlock({
             {eyebrow}
           </p>
         )}
-        <h2 className="font-heading text-3xl font-black uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
+        <h2 className="font-heading text-3xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-5xl">
           {heading}
         </h2>
       </div>

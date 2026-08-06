@@ -26,18 +26,18 @@ export default function StyleguidePage() {
         <p className="text-xs font-semibold uppercase tracking-[0.08em] text-blue-deep">
           Rota temporária — removida antes da publicação
         </p>
-        <h1 className="mt-4 font-heading text-5xl font-black uppercase leading-[0.95] tracking-[-0.03em] md:text-7xl">
+        <h1 className="mt-4 font-heading text-5xl font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-7xl">
           Styleguide
         </h1>
       </Section>
 
       <Section background="white">
-        <h2 className="font-heading text-2xl font-black uppercase tracking-[-0.02em]">
+        <h2 className="font-heading text-2xl font-bold uppercase tracking-[-0.02em]">
           Cores
         </h2>
         <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
           {colors.map((color) => (
-            <div key={color.name} className="rounded-xl border border-rule">
+            <div key={color.name} className="overflow-hidden rounded-xl bg-white">
               <div className={`h-24 rounded-t-xl ${color.className}`} />
               <div className="p-3">
                 <p className="text-sm font-semibold">{color.name}</p>
@@ -49,28 +49,28 @@ export default function StyleguidePage() {
       </Section>
 
       <Section background="sand">
-        <h2 className="font-heading text-2xl font-black uppercase tracking-[-0.02em]">
+        <h2 className="font-heading text-2xl font-bold uppercase tracking-[-0.02em]">
           Tipografia
         </h2>
         <div className="mt-6 flex flex-col gap-6">
-          <p className="font-heading text-3xl font-black uppercase leading-[1.15] tracking-[-0.01em] md:text-5xl">
+          <p className="font-heading text-3xl font-bold uppercase leading-[1.15] tracking-[-0.01em] md:text-5xl">
             Título hero
           </p>
-          <p className="font-heading text-4xl font-black uppercase tracking-[-0.02em]">
+          <p className="font-heading text-4xl font-bold uppercase tracking-[-0.02em]">
             Título de seção
           </p>
           <p className="max-w-2xl text-lg leading-relaxed">
-            Corpo de texto em Inter Regular, 1.125rem, line-height 1.6. Usado
+            Corpo de texto em DM Sans Regular, 1.125rem, line-height 1.6. Usado
             para parágrafos e descrições ao longo do site.
           </p>
           <p className="text-xs font-semibold uppercase tracking-[0.08em] text-blue-deep">
-            Rótulo e olho, Inter Semibold, caixa alta
+            Rótulo e olho, DM Sans Semibold, caixa alta
           </p>
         </div>
       </Section>
 
       <Section background="white">
-        <h2 className="font-heading text-2xl font-black uppercase tracking-[-0.02em]">
+        <h2 className="font-heading text-2xl font-bold uppercase tracking-[-0.02em]">
           Botões
         </h2>
         <div className="mt-6 flex flex-wrap gap-4">
@@ -81,7 +81,7 @@ export default function StyleguidePage() {
       </Section>
 
       <Section background="sand">
-        <h2 className="font-heading text-2xl font-black uppercase tracking-[-0.02em]">
+        <h2 className="font-heading text-2xl font-bold uppercase tracking-[-0.02em]">
           Card, MarkerList e Scatter
         </h2>
         <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -89,7 +89,7 @@ export default function StyleguidePage() {
             <p className="text-sm font-semibold uppercase tracking-wide text-blue-deep">
               Card branco
             </p>
-            <p className="mt-2 text-lg font-black">Borda sólida, cantos arredondados</p>
+            <p className="mt-2 text-lg font-bold">Borda sólida, cantos arredondados</p>
             <MarkerList
               className="mt-4"
               items={["Item de exemplo um", "Item de exemplo dois", "Item de exemplo três"]}
@@ -99,25 +99,25 @@ export default function StyleguidePage() {
             <p className="text-sm font-semibold uppercase tracking-wide text-white">
               Card preto
             </p>
-            <p className="mt-2 text-lg font-black">Usado para pontuar o grid</p>
+            <p className="mt-2 text-lg font-bold">Usado para pontuar o grid</p>
           </Card>
           <Card tone="blue">
             <p className="text-sm font-semibold uppercase tracking-wide">
               Card azul
             </p>
-            <p className="mt-2 text-lg font-black">Sinalização, uso pontual</p>
+            <p className="mt-2 text-lg font-bold">Sinalização, uso pontual</p>
           </Card>
         </div>
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           <StatCard value="~10 mi" description="Exemplo de número-destaque com descrição de apoio." />
-          <div className="flex items-center justify-center rounded-xl border border-rule bg-white p-8">
+          <div className="flex items-center justify-center rounded-xl bg-white p-8">
             <Scatter tone="blue" />
           </div>
         </div>
       </Section>
 
       <Section background="white">
-        <h2 className="font-heading text-2xl font-black uppercase tracking-[-0.02em]">
+        <h2 className="font-heading text-2xl font-bold uppercase tracking-[-0.02em]">
           SplitBlock, SignatureLine e Reveal
         </h2>
         <p className="mt-2 text-sm text-black/60">
@@ -139,7 +139,7 @@ export default function StyleguidePage() {
       </Section>
 
       <Section background="black">
-        <h2 className="font-heading text-2xl font-black uppercase tracking-[-0.02em] text-white">
+        <h2 className="font-heading text-2xl font-bold uppercase tracking-[-0.02em] text-white">
           Bloco preto
         </h2>
         <p className="mt-4 max-w-2xl text-white/80">
@@ -149,7 +149,7 @@ export default function StyleguidePage() {
       </Section>
 
       <Section background="blue">
-        <h2 className="font-heading text-2xl font-black uppercase tracking-[-0.02em]">
+        <h2 className="font-heading text-2xl font-bold uppercase tracking-[-0.02em]">
           Bloco azul
         </h2>
         <p className="mt-4 max-w-2xl">
