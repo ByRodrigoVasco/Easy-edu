@@ -10,7 +10,7 @@ export const pains = {
     {
       number: "01",
       title: "Custo elevado da preparação completa",
-      body: "Um estudante que busca disciplinas específicas para vestibulares pode gastar entre R$ 400 e R$ 900 por mês em cada curso. Combinar exatas, humanas e redação multiplica rapidamente o valor total.",
+      body: "Um estudante que busca disciplinas específicas para vestibulares paga um valor considerável por mês em cada curso. Combinar exatas, humanas e redação multiplica rapidamente o valor total.",
     },
     {
       number: "02",
@@ -30,21 +30,52 @@ export const pains = {
   ],
 };
 
-export const costGap = {
-  heading: "A conta que não fecha",
-  value: "R$ 400–900",
-  unit: "por mês, em cada curso",
-  body: "Combinar disciplinas como exatas, humanas e redação em cursos separados multiplica rapidamente o valor total de uma preparação completa.",
+export type Persona = {
+  id: string;
+  index: string;
+  role: string;
+  headline: string;
+  /** Orçamento: ~40 palavras. Acima disso o card ganha scroll interno no mobile. */
+  body: string;
+  photo: string;
+  photoAlt: string;
 };
 
 export const impacted = {
   heading: "Quem é impactado",
-  items: [
-    "Estudantes do Ensino Médio",
-    "Candidatos ao ENEM",
-    "Candidatos a vestibulares e concursos",
-    "Jovens que já concluíram a escola e seguem buscando preparação para o Ensino Superior",
-  ],
+  support:
+    "A mesma barreira aparece de três lados diferentes. Quem estuda, quem ensina e quem prepara sentem a fragmentação da oferta de formas distintas.",
+  personas: [
+    {
+      id: "estudante",
+      index: "01",
+      role: "Rafael, estudante",
+      headline: "Quer se preparar em todas as disciplinas, mas custa caro.",
+      body: "Rafael entrou no ensino médio e já sabe que precisa de mais de um curso pra se preparar em nível competitivo. Mensalidade alta, contrato rígido e multa de cancelamento travam ele numa disciplina só, enquanto outros candidatos fazem todas.",
+      photo: "/photos/menino-desafio.png",
+      photoAlt:
+        "Rafael, estudante do ensino médio, sentado no quarto onde estuda",
+    },
+    {
+      id: "escola",
+      index: "02",
+      role: "Cláudia, direção de colégio",
+      headline: "Quer todos aprovados, mas nem todos podem se preparar.",
+      body: "Cláudia exige alta performance e empurra cada aluno pra aprovação no vestibular dos sonhos. Falta uma solução que vista a camisa do colégio e coloque todos no mesmo nível de preparação, não só quem já tem estrutura em casa.",
+      photo: "/photos/mulher-desafios.png",
+      photoAlt:
+        "Cláudia na sala da direção do colégio, com um quadro de planejamento ao fundo",
+    },
+    {
+      id: "cursinho",
+      index: "03",
+      role: "Marcos, dono de cursinho",
+      headline: "Quer crescer, mas não consegue pagar por isso.",
+      body: "Marcos planeja expandir a operação em salas e em alcance remoto, e procura uma plataforma que atenda esses requisitos sem cobrar por isso. A capacidade de abrir novas turmas existe. Falta volume de alunos que ele não consegue adquirir sozinho.",
+      photo: "/photos/homem-desafio.png",
+      photoAlt: "Marcos à mesa do escritório do cursinho que dirige",
+    },
+  ] satisfies Persona[],
 };
 
 export const synthesis = {

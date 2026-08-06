@@ -7,7 +7,7 @@ export const hero = {
 
 export const origin = {
   heading: "Como nasceu a EasyEdu",
-  body: "A ideia nasceu de uma dor real vivida pelo fundador durante a preparação para vestibulares, quando ficou claro que estudar não era o maior desafio — o difícil era ter acesso à preparação certa.",
+  body: "A ideia nasceu de uma dor real vivida pelo fundador durante a preparação para vestibulares, quando ficou claro que estudar não era o maior desafio. O difícil era ter acesso à preparação certa.",
 };
 
 export const purpose = {

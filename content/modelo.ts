@@ -1,7 +1,7 @@
 export const hero = {
   eyebrow: "Modelo de Negócio e Mercado",
   title:
-    "Um modelo de receita em duas fases: primeiro a escola, depois o estudante.",
+    "Um modelo de receita em duas fases. Primeiro a escola, depois o estudante.",
 };
 
 export const phases = [
