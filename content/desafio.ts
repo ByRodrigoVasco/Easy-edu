@@ -50,7 +50,7 @@ export const impacted = {
       id: "estudante",
       index: "01",
       role: "Rafael, estudante",
-      headline: "Precisa de três matérias, mas só uma cabe no orçamento.",
+      headline: "Quer se preparar em todas as disciplinas, mas custa caro.",
       body: "Rafael entrou no ensino médio e já sabe que precisa de mais de um curso pra se preparar em nível competitivo. Mensalidade alta, contrato rígido e multa de cancelamento travam ele numa disciplina só, enquanto outros candidatos fazem todas.",
       photo: "/photos/menino-desafio.png",
       photoAlt:
